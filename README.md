@@ -8,16 +8,6 @@
 
 
 
-## 📋 Table of Contents
-
-1. 🤖 [Introduction](#introduction)
-2. ⚙️ [Tech Stack](#tech-stack)
-3. 🔋 [Features](#features)
-4. 🤸 [Quick Start](#quick-start)
-5. 🕸️ [Snippets](#snippets)
-
-
-
 ## 🤖 Introduction
 This is my **interactive 3D portfolio website** built with **React**, **Three.js**, and **Tailwind CSS**.
 
