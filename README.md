@@ -14,34 +14,6 @@ This is my **interactive 3D portfolio website** built with **React**, **Three.js
 Feel free to explore the code, check out the live version, and reach out through the contact section!
 
 
-
-## ⚙️ Tech Stack
-
-This portfolio was crafted using the following tools and libraries:
-
-- ⚛️ **React.js** 
-- 🌐 **Vite**
-- 🎮 **Three.js**
-- 🧵 **React Three Fiber**
-- 🪄 **React Drei**
-- 🎨 **Tailwind CSS**
-- 🎥 **Framer Motion**
-- 📧 **EmailJS**
-
-
-## 🔋 Features
-
-- 🖥️ **Customizable 3D Hero Section**
-- 🧩 **Interactive Work Sections**
-- 🧠 **3D Skills Section**
-- 📁 **Projects & Testimonials**
-- 🌍 **Contact Section**
-- 🌌 **Dynamic Stars Background**
-- 🎞️ **Consistent UI Animations**
-- 📱 **Fully Responsive**
-
-
-
 ## 🤸 Quick Start
 
 ### 🛠️ Prerequisites
