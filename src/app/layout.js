@@ -20,8 +20,6 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
-  // Set dark mode as default on first load
-  // This will ensure SSR and first paint is dark
   return (
     <html lang="en" className="light">
       <body
