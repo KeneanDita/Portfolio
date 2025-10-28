@@ -87,7 +87,7 @@ export default function Home() {
         {/* <div className="rounded-full border border-muted bg-gradient-to-br from-slate-100 to-slate-200 dark:from-slate-800 dark:to-slate-900 w-20 h-20 flex items-center justify-center mb-2 overflow-hidden">
           <Image src="/headshot.png" alt="Kenean Dita Meleta" width={80} height={80} className="object-cover w-full h-full" />
         </div> */}
-        <h1 className="text-3xl font-bold tracking-tight bg-gradient-to-r from-yellow-400 via-red-400 to-pink-500 bg-clip-text text-transparent">
+        <h1 className="text-4xl font-bold tracking-tight bg-gradient-to-r from-yellow-400 via-red-400 to-pink-500 bg-clip-text text-transparent">
           Kenean Dita Meleta
         </h1>
         <p className="text-muted-foreground text-base">
@@ -110,7 +110,6 @@ export default function Home() {
           <span>+251-923759696</span>
         </div>
       </header>
-
       {/* Leadership Profile Section */}
       <section className="mb-10 rounded-xl border bg-background/70 p-6 flex flex-col gap-4 shadow-sm items-center w-full max-w-2xl">
         <h2 className="text-lg font-semibold mb-1 text-primary text-center">
@@ -170,48 +169,58 @@ export default function Home() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Read Resume
+                  Download Resume
                 </a>
               </Button>
             </div>
           </div>
-          {/* Card 2 */}
-          <div className="flex-1 flex flex-col sm:flex-row items-center gap-6 bg-transparent">
-            <div className="w-full sm:w-1/3 flex justify-center">
-              <Image
-                src="/cover2.png"
-                alt="NLP Spam Email Models Comparison Cover"
-                width={595}
-                height={842}
-                className="object-cover rounded shadow-md border w-[150px] sm:w-[120px] md:w-[180px] lg:w-[210px] xl:w-[250px] h-auto"
-                style={{ aspectRatio: "595/842" }}
-              />
-            </div>
-            <div className="flex-1 flex flex-col gap-2 items-start w-full">
-              <h3 className="text-base font-semibold text-foreground">
-                Comparative Analysis of NLP Models for Spam Email Detection
-              </h3>
-              <p className="text-sm text-muted-foreground">
-                This article presents a side-by-side comparison of various NLP
-                and machine learning models for spam email detection,
-                highlighting their strengths, weaknesses, and practical
-                applications.
-              </p>
+          /* Social Links */
+          <div className="flex-1 flex flex-col items-center sm:items-start gap-4 bg-transparent w-full">
+            <h3 className="text-base font-semibold text-foreground">
+              Social Links
+            </h3>
+            <div className="w-full flex flex-wrap justify-evenly gap-3">
               <Button asChild size="sm" variant="outline">
                 <a
-                  href="/publications/2.pdf"
+                  href="https://github.com/yourusername"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Read Publication
+                  GitHub
+                </a>
+              </Button>
+              <Button asChild size="sm" variant="outline">
+                <a
+                  href="https://t.me/yourusername"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Telegram
+                </a>
+              </Button>
+              <Button asChild size="sm" variant="outline">
+                <a
+                  href="https://instagram.com/yourusername"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Instagram
+                </a>
+              </Button>
+              <Button asChild size="sm" variant="outline">
+                <a
+                  href="https://twitter.com/yourusername"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Twitter
                 </a>
               </Button>
             </div>
           </div>
         </div>
       </section>
-
-      {/* Tech Stack Section */}
+      }
       <section className="mb-12 w-full flex flex-col items-center max-w-2xl">
         <h2 className="text-lg font-semibold mb-4 text-center">
           My Tech Stack
@@ -352,7 +361,6 @@ export default function Home() {
           </span>
         </div>
       </section>
-
       {/* Projects Section */}
       <section className="mb-12 w-full flex flex-col items-center">
         <h2 className="text-lg font-semibold mb-4 text-center">Projects</h2>
