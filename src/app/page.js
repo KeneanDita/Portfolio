@@ -21,7 +21,7 @@ const projects = [
     link: "https://github.com/KeneanDita/SentriX",
     dockerlink:
       "https://hub.docker.com/repository/docker/keneandita/sentrix/general",
-    icon: "/github-mark.png",
+    icon: "/crypto.png",
     tech: [
       "Tensorflow",
       "Torch",
@@ -39,7 +39,7 @@ const projects = [
     link: "https://github.com/KeneanDita/Fancy-Agent",
     dockerlink:
       "https://hub.docker.com/repository/docker/keneandita/fancy-agent/general",
-    icon: "/github-mark.png",
+    icon: "/terminal2.png",
     tech: ["Python", "Rich", "Google-GenAI"],
     industry: ["AI", "Developer Tools"],
   },
@@ -50,7 +50,7 @@ const projects = [
     link: "https://github.com/KeneanDita/Vendly",
     dockerlink:
       "https://hub.docker.com/repository/docker/keneandita/vendly/general",
-    icon: "/github-mark.png",
+    icon: "/global.png",
     tech: ["Django", "Tailwind CSS", "SQLlite", "Docker"],
     industry: ["Ecommerce", "Retail"],
   },
@@ -62,7 +62,7 @@ const projects = [
     link: "https://github.com/KeneanDita/GradeCast",
     dockerlink:
       "https://hub.docker.com/repository/docker/keneandita/gradecast/general",
-    icon: "/github-mark.png",
+    icon: "/grade.png",
     tech: ["Flask", "Scikit-learn", "Jupyter Notebook", "Docker"],
     industry: ["ML", "Education"],
   },
@@ -73,7 +73,7 @@ const projects = [
     link: "https://github.com/KeneanDita/Gitlog-CLI",
     dockerlink:
       "https://hub.docker.com/repository/docker/keneandita/gitlog-cli/general",
-    icon: "/admas.png",
+    icon: "/terminal.png",
     tech: ["Urllib", "Json", "Rich"],
     industry: ["Developer Tools", "Terminal Utilities"],
   },
@@ -84,7 +84,7 @@ const projects = [
     link: "https://github.com/KeneanDita/Fidel-Vision",
     dockerlink:
       "https://hub.docker.com/repository/docker/keneandita/fidelvision/general",
-    icon: "/airbnb.png",
+    icon: "/fv.png",
     tech: ["Streamlit", "Keras", "TensorFlow", "Pandas", "Docker"],
     industry: ["Deep Learning", "Amharic Language"],
   },
