@@ -126,18 +126,18 @@ export default function Home() {
       {/* Leadership Profile Section */}
       <section className="mb-10 rounded-xl border bg-background/70 p-6 flex flex-col gap-4 shadow-sm items-center w-full max-w-2xl">
         <h2 className="text-lg font-semibold mb-1 text-primary text-center">
-          A Simple Quote
+          Powerful Narrative
         </h2>
         <div className="text-sm text-muted-foreground leading-relaxed text-left space-y-3">
           <p className="text-base font-semibold text-foreground">
-            "Simplicity is the ultimate sophistication."
+            "Everything should be made as simple as possible, but no simpler."
           </p>
-          <p>Leonardo da Vinci</p>
+          <p>— Albert Einstein</p>
           <p>
-            The most elegant solution, like the most refined dish, often appears
-            simple and intuitive. But behind that simplicity lies a deep
-            understanding of complex ingredients and techniques, all working in
-            harmony to create something both powerful and beautiful.
+            Untangling a complex problem reveals its core truth. A powerful
+            strategy is not a dense document, but a clear, actionable path
+            forward. It distills chaos into clarity, empowering focused action
+            and achieving profound results with apparent ease.
           </p>
         </div>
       </section>
