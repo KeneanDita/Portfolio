@@ -171,11 +171,7 @@ export default function Home() {
                 deliver quality results on time.
               </p>
               <Button asChild size="sm" variant="outline">
-                <a
-                  href="/Resume/Resume.pdf"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+                <a href="/Resume.pdf" target="_blank" rel="noopener noreferrer">
                   Download Resume
                 </a>
               </Button>
