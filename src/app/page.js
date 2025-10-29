@@ -99,7 +99,7 @@ export default function Home() {
         {/* <div className="rounded-full border border-muted bg-gradient-to-br from-slate-100 to-slate-200 dark:from-slate-800 dark:to-slate-900 w-20 h-20 flex items-center justify-center mb-2 overflow-hidden">
           <Image src="/headshot.png" alt="Kenean Dita Meleta" width={80} height={80} className="object-cover w-full h-full" />
         </div> */}
-        <h1 className="text-3xl font-bold tracking-tight bg-gradient-to-r from-yellow-400 via-red-400 to-pink-500 bg-clip-text text-transparent">
+        <h1 className="text-3xl font-bold tracking-tight bg-gradient-to-r from-blue-700 via-blue-500 to-sky-300 bg-clip-text text-transparent">
           Kenean Dita Meleta
         </h1>
         <p className="text-muted-foreground text-base">
