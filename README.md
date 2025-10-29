@@ -16,10 +16,9 @@ Top-level (important items):
   - `page.js` - home page
   - `globals.css` - global styles
   - `publications/` - sub-pages for publications
-  - `Resume/` - resume page
 - `src/components/` - React components (e.g. `ThemeToggle.jsx`, ui primitives)
 - `src/lib/` - helper utilities (e.g. `utils.js`)
-- `public/Resume/` - static resume files or assets
+- `public/` - static resume files or assets
 - `package.json` - scripts and dependencies
 
 This structure is intentionally small and focused so you can find components and pages quickly.
