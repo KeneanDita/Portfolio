@@ -38,7 +38,7 @@ const projects = [
       "A command-line interface (CLI) tool designed to assist with code generation, syntax highlighting, and interactively prompting users to execute commands. ",
     link: "https://github.com/KeneanDita/Fancy-Agent",
     dockerlink:
-      "https://hub.docker.com/repository/docker/keneandita/fancy-agent/general",
+      "https://hub.docker.com/repository/docker/keneandita/fancyagent/general",
     icon: "/terminal2.png",
     tech: ["Python", "Rich", "Google-GenAI"],
     industry: ["AI", "Developer Tools"],
@@ -72,7 +72,7 @@ const projects = [
       "A lightweight command-line tool that connects to the GitHub API to retrieve and display a user’s most recent public activity. It shows actions such as commits, pull requests, issues, and repository events in a clean, readable format directly in the terminal.",
     link: "https://github.com/KeneanDita/Gitlog-CLI",
     dockerlink:
-      "https://hub.docker.com/repository/docker/keneandita/gitlog-cli/general",
+      "https://hub.docker.com/repository/docker/keneandita/gitlogcli/general",
     icon: "/terminal.png",
     tech: ["Urllib", "Json", "Rich"],
     industry: ["Developer Tools", "Terminal Utilities"],
