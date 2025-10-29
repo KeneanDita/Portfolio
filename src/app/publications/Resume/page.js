@@ -1,5 +1,5 @@
 import React from "react";
-import resumePDF from "../../../public/Resume.pdf";
+import resumePDF from "/Resume.pdf";
 
 export default function PDFViewer() {
   return (
