@@ -19,8 +19,7 @@ const projects = [
     description:
       "A minimal machine learning project that analyzes and predicts cryptocurrency market movements.",
     link: "https://github.com/KeneanDita/SentriX",
-    dockerlink:
-      "https://hub.docker.com/repository/docker/keneandita/sentrix/general",
+    dockerlink: "https://hub.docker.com/r/keneandita/sentrix",
     icon: "/crypto.png",
     tech: [
       "Tensorflow",
@@ -37,8 +36,7 @@ const projects = [
     description:
       "A command-line interface (CLI) tool designed to assist with code generation, syntax highlighting, and interactively prompting users to execute commands. ",
     link: "https://github.com/KeneanDita/Fancy-Agent",
-    dockerlink:
-      "https://hub.docker.com/repository/docker/keneandita/fancyagent/general",
+    dockerlink: "https://hub.docker.com/r/keneandita/fancyagent",
     icon: "/terminal2.png",
     tech: ["Python", "Rich", "Google-GenAI"],
     industry: ["AI", "Developer Tools"],
@@ -48,8 +46,7 @@ const projects = [
     description:
       "A comprehensive web platform built with Django and Tailwind CSS, this site offers a seamless, modern shopping experience across diverse categories. Vendly has clean, responsive design and optimized performance.",
     link: "https://github.com/KeneanDita/Vendly",
-    dockerlink:
-      "https://hub.docker.com/repository/docker/keneandita/vendly/general",
+    dockerlink: "https://hub.docker.com/r/keneandita/vendly",
     icon: "/global.png",
     tech: ["Django", "Tailwind CSS", "SQLlite", "Docker"],
     industry: ["Ecommerce", "Retail"],
@@ -60,8 +57,7 @@ const projects = [
     description:
       "A machine learning web application built with Flask that predicts student performance based on input data.This project showcases practical skills in data preprocessing, model training, evaluation, and deploying ML models using Flask for real-time predictions.",
     link: "https://github.com/KeneanDita/GradeCast",
-    dockerlink:
-      "https://hub.docker.com/repository/docker/keneandita/gradecast/general",
+    dockerlink: "https://hub.docker.com/r/keneandita/gradecast",
     icon: "/grade.png",
     tech: ["Flask", "Scikit-learn", "Jupyter Notebook", "Docker"],
     industry: ["ML", "Education"],
@@ -71,8 +67,7 @@ const projects = [
     description:
       "A lightweight command-line tool that connects to the GitHub API to retrieve and display a user’s most recent public activity. It shows actions such as commits, pull requests, issues, and repository events in a clean, readable format directly in the terminal.",
     link: "https://github.com/KeneanDita/Gitlog-CLI",
-    dockerlink:
-      "https://hub.docker.com/repository/docker/keneandita/gitlogcli/general",
+    dockerlink: "https://hub.docker.com/r/keneandita/gitlogcli",
     icon: "/terminal.png",
     tech: ["Urllib", "Json", "Rich"],
     industry: ["Developer Tools", "Terminal Utilities"],
@@ -82,8 +77,7 @@ const projects = [
     description:
       "A Deep Learning + Streamlit web app for recognizing handwritten Amharic fidel characters (34 root groups × 7 orders). It uses a CNN model built with TensorFlow/Keras, trained on a custom dataset of handwritten Amharic letters, and serves predictions through a Streamlit interface. ",
     link: "https://github.com/KeneanDita/Fidel-Vision",
-    dockerlink:
-      "https://hub.docker.com/repository/docker/keneandita/fidelvision/general",
+    dockerlink: "https://hub.docker.com/r/keneandita/fidelvision",
     icon: "/fv.png",
     tech: ["Streamlit", "Keras", "TensorFlow", "Pandas", "Docker"],
     industry: ["Deep Learning", "Amharic Language"],
