@@ -92,11 +92,10 @@ export default function Home() {
       >
         <div className="rounded-full border border-muted bg-gradient-to-br from-slate-100 to-slate-200 dark:from-slate-800 dark:to-slate-900 w-20 h-20 flex items-center justify-center mb-2 overflow-hidden">
           <Image
-            src="https://avatars.githubusercontent.com/u/126476713?s=400&u=3ad580a40dcabb9f664c7cf412d3162fee8306fb&v=4"
-            alt="Kenean Dita Meleta"
-            width={80}
-            height={80}
-            className="object-cover w-full h-full"
+            src="https://avatars.githubusercontent.com/u/126476713?s=400&v=4"
+            alt="Profile"
+            width={200}
+            height={200}
           />
         </div>
         <h1 className="text-3xl font-bold tracking-tight bg-gradient-to-r from-blue-700 via-blue-500 to-sky-300 bg-clip-text text-transparent">
