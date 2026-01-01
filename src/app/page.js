@@ -102,7 +102,7 @@ export default function Home() {
           Kenean Dita Meleta
         </h1>
         <p className="text-muted-foreground text-base">
-          Software Engineer | Container Guru | ML Enthusiast
+          Machine Learning | Backend Development | Always optimizing for efficiency
         </p>
         <div className="flex flex-wrap gap-3 text-xs text-muted-foreground justify-center">
           <a href="mailto:keneansufa@gmail.com" className="hover:underline">
