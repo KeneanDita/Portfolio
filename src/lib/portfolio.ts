@@ -18,7 +18,7 @@ export const siteConfig = {
   email: "KeneanSufa@gmail.com",
   headline:
     "I build ML-driven systems and reliable backend APIs turning messy data and ambiguous requirements into production-ready solutions.",
-  resumeHref: "/resume.pdf",
+  resumeHref: "/Resume.pdf",
   social: {
     github: "https://github.com/keneandita",
     linkedin: "https://www.linkedin.com/in/keneandita",
