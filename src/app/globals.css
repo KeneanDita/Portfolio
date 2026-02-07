@@ -154,3 +154,118 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* --- Section background decor (subtle, consistent, motion-safe) --- */
+.bg-decor-dots {
+  background-image:
+    radial-gradient(circle at 1px 1px, color-mix(in oklab, var(--foreground) 18%, transparent) 1px, transparent 0);
+  background-size: 20px 20px;
+}
+
+.bg-decor-vignette {
+  background-image:
+    radial-gradient(80% 60% at 50% 35%, transparent 0%, transparent 55%, color-mix(in oklab, var(--background) 85%, transparent) 100%),
+    linear-gradient(to bottom, color-mix(in oklab, var(--background) 55%, transparent) 0%, transparent 45%, color-mix(in oklab, var(--background) 65%, transparent) 100%);
+  opacity: 1;
+}
+
+.bg-decor-mask {
+  /* Keep the decor mainly around edges; preserve readability in the center. */
+  background: radial-gradient(70% 70% at 50% 50%, transparent 0%, transparent 55%, color-mix(in oklab, var(--background) 92%, transparent) 100%);
+  opacity: 1;
+}
+
+@keyframes decorFloat {
+  0% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  50% {
+    transform: translate3d(0, -10px, 0) scale(1.02);
+  }
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+}
+
+@keyframes decorFloatSlow {
+  0% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  50% {
+    transform: translate3d(0, 14px, 0) scale(1.03);
+  }
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+}
+
+@keyframes decorSpinSoft {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes decorWobble {
+  0% {
+    transform: translate3d(0, 0, 0) rotate(0deg);
+  }
+  35% {
+    transform: translate3d(6px, -4px, 0) rotate(6deg);
+  }
+  70% {
+    transform: translate3d(-4px, 6px, 0) rotate(-4deg);
+  }
+  100% {
+    transform: translate3d(0, 0, 0) rotate(0deg);
+  }
+}
+
+@keyframes decorPop {
+  0% {
+    transform: translate3d(0, 0, 0) scale(0.98);
+    opacity: 0.85;
+  }
+  50% {
+    transform: translate3d(0, -2px, 0) scale(1.04);
+    opacity: 1;
+  }
+  100% {
+    transform: translate3d(0, 0, 0) scale(0.98);
+    opacity: 0.9;
+  }
+}
+
+.decor-animate {
+  will-change: transform;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .decor-animate {
+    animation: none !important;
+    transform: none !important;
+  }
+}
+
+/* Motion is intentionally gentle and long-duration. */
+.decor-float-slow {
+  animation: decorFloat 12s ease-in-out infinite;
+}
+
+.decor-float-slower {
+  animation: decorFloatSlow 18s ease-in-out infinite;
+}
+
+.decor-spin-soft {
+  animation: decorSpinSoft 36s linear infinite;
+}
+
+.decor-wobble {
+  animation: decorWobble 16s ease-in-out infinite;
+}
+
+.decor-pop {
+  animation: decorPop 6.5s ease-in-out infinite;
+}
