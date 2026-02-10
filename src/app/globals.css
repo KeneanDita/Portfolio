@@ -162,6 +162,22 @@
   background-size: 20px 20px;
 }
 
+.bg-decor-particles {
+  /* Multiple tiny radial gradients at different anchors to simulate small particles. */
+  background-image:
+    radial-gradient(circle at 12% 18%, color-mix(in oklab, var(--foreground) 16%, transparent) 1px, transparent 2px),
+    radial-gradient(circle at 22% 62%, color-mix(in oklab, var(--foreground) 14%, transparent) 1px, transparent 2px),
+    radial-gradient(circle at 34% 26%, color-mix(in oklab, var(--foreground) 12%, transparent) 1px, transparent 2px),
+    radial-gradient(circle at 46% 78%, color-mix(in oklab, var(--foreground) 14%, transparent) 1px, transparent 2px),
+    radial-gradient(circle at 58% 36%, color-mix(in oklab, var(--foreground) 12%, transparent) 1px, transparent 2px),
+    radial-gradient(circle at 66% 64%, color-mix(in oklab, var(--foreground) 13%, transparent) 1px, transparent 2px),
+    radial-gradient(circle at 74% 20%, color-mix(in oklab, var(--foreground) 12%, transparent) 1px, transparent 2px),
+    radial-gradient(circle at 82% 52%, color-mix(in oklab, var(--foreground) 14%, transparent) 1px, transparent 2px),
+    radial-gradient(circle at 90% 30%, color-mix(in oklab, var(--foreground) 12%, transparent) 1px, transparent 2px);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
 .bg-decor-vignette {
   background-image:
     radial-gradient(80% 60% at 50% 35%, transparent 0%, transparent 55%, color-mix(in oklab, var(--background) 85%, transparent) 100%),
@@ -238,6 +254,30 @@
   }
 }
 
+@keyframes decorPan {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  50% {
+    transform: translate3d(10px, -8px, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes decorDrift {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  50% {
+    transform: translate3d(8px, -10px, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
 .decor-animate {
   will-change: transform;
 }
@@ -268,4 +308,12 @@
 
 .decor-pop {
   animation: decorPop 6.5s ease-in-out infinite;
+}
+
+.decor-pan {
+  animation: decorPan 22s ease-in-out infinite;
+}
+
+.decor-drift {
+  animation: decorDrift 14s ease-in-out infinite;
 }
