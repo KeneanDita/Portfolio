@@ -1,17 +1,19 @@
 import Image from "next/image";
 import { Github, Linkedin, MapPin, Send } from "lucide-react";
 
+import { BackgroundDecor } from "@/components/background-decor";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { siteConfig } from "@/lib/portfolio";
-
 export function HeroSection() {
   return (
     <section
       id="home"
-      className="scroll-mt-24 border-b"
+      className="scroll-mt-24 relative overflow-hidden border-b"
     >
-      <div className="mx-auto flex min-h-[calc(100dvh-6rem)] max-w-6xl px-4 pb-16 pt-12 sm:px-6 sm:pb-20 sm:pt-16 lg:px-8 lg:pb-24 lg:pt-20">
+      <BackgroundDecor variant="hero" />
+
+      <div className="relative z-10 mx-auto flex min-h-[calc(100dvh-6rem)] max-w-6xl px-4 pb-16 pt-12 sm:px-6 sm:pb-20 sm:pt-16 lg:px-8 lg:pb-24 lg:pt-20">
         <div className="grid w-full items-center gap-10 md:grid-cols-[1fr_360px]">
           <div className="space-y-6 text-center md:text-left">
             <div className="space-y-3">
