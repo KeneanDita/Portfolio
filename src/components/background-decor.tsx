@@ -17,6 +17,18 @@ const VARIANT_COLORS: Record<BackgroundDecorVariant, { a: string; b: string }> =
   neutral: { a: "var(--chart-3)", b: "var(--chart-3)" },
 };
 
+const PARTICLES = [
+  { x: "8%", y: "26%", s: 2, o: 0.22, d: "0s" },
+  { x: "16%", y: "62%", s: 3, o: 0.18, d: "-1.2s" },
+  { x: "28%", y: "18%", s: 2, o: 0.16, d: "-2.1s" },
+  { x: "42%", y: "70%", s: 2, o: 0.14, d: "-0.6s" },
+  { x: "58%", y: "28%", s: 3, o: 0.16, d: "-1.8s" },
+  { x: "66%", y: "54%", s: 2, o: 0.18, d: "-2.6s" },
+  { x: "74%", y: "18%", s: 2, o: 0.14, d: "-0.9s" },
+  { x: "84%", y: "66%", s: 3, o: 0.16, d: "-1.5s" },
+  { x: "92%", y: "34%", s: 2, o: 0.14, d: "-2.3s" },
+] as const;
+
 function positionsFor(variant: BackgroundDecorVariant) {
   switch (variant) {
     case "hero":
@@ -81,7 +93,8 @@ export function BackgroundDecor({
       )}
     >
       {/* Subtle dotted + gradient wash */}
-      <div className="absolute inset-0 bg-decor-dots opacity-[0.55]" />
+      <div className="absolute inset-0 bg-decor-dots blur-[0.6px] opacity-[0.38]" />
+      <div className="decor-animate decor-pan absolute inset-0 bg-decor-particles blur-[0.8px] opacity-[0.4]" />
       <div className="absolute inset-0 bg-decor-vignette" />
 
       {/* Blobs */}
@@ -109,6 +122,7 @@ export function BackgroundDecor({
           "border border-foreground/10 dark:border-foreground/15",
           "bg-background/20 dark:bg-background/10",
           "shadow-sm",
+          "blur-[0.25px]",
           pos.ringA,
         )}
       />
@@ -118,6 +132,7 @@ export function BackgroundDecor({
           "border border-foreground/10 dark:border-foreground/15",
           "bg-background/20 dark:bg-background/10",
           "shadow-sm",
+          "blur-[0.25px]",
           pos.ringB,
         )}
       />
@@ -131,6 +146,22 @@ export function BackgroundDecor({
           <div className="absolute left-12 top-12 h-2.5 w-2.5 -rotate-45 rounded-full bg-foreground/10 dark:bg-foreground/15" />
         </div>
       </div>
+
+      {/* Smaller drifting particles */}
+      {PARTICLES.map((p, i) => (
+        <span
+          key={i}
+          className="decor-animate decor-drift absolute rounded-full bg-foreground/20 dark:bg-foreground/25 blur-[0.6px]"
+          style={{
+            left: p.x,
+            top: p.y,
+            width: p.s,
+            height: p.s,
+            opacity: p.o,
+            animationDelay: p.d,
+          }}
+        />
+      ))}
 
       {/* Soft mask so decor stays near edges */}
       <div className="absolute inset-0 bg-decor-mask" />
